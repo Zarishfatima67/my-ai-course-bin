@@ -13,5 +13,8 @@ print(lhrinfo[0:6:1])
 print(lhrinfo[9:17:1])
 print(lhrinfo[20:28:1])
 print(len(lhrinfo))
+for cha in lhrinfo:
+    print(cha)
+
 
 
