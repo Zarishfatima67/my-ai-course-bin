@@ -1,0 +1,466 @@
+ #Python Lists 
+ #1. Create a list nums = [3, 1, 4, 1, 5] and print the first and last elements. 
+#Tip: Use nums[0] and nums[-1].
+
+# Create the list
+nums = [3, 1, 4, 1, 5]
+
+# Print the first and last elements
+print("First element:", nums[0])
+print("Last element:", nums[-1])
+
+#2. Find the length of the list colors = ['red', 'blue', 'green']. 
+#Tip: Use len(colors). 
+
+# Create the list
+colors = ['red', 'blue', 'green']
+
+# Find and print the length
+print("Length of the list:", len(colors))
+
+#3. Append 'yellow' to the list colors = ['red', 'blue']. 
+#Tip: Use append(). 
+
+# Create the list
+colors = ['red', 'blue']
+
+# Append 'yellow' to the list
+colors.append('yellow')
+
+# Print the updated list
+print(colors)
+
+#4. Insert 'orange' at index 1 in fruits = ['apple', 'banana']. 
+#Tip: Use insert(index, value).
+
+
+# Create the list
+fruits = ['apple', 'banana']
+
+# Insert 'orange' at index 1
+fruits.insert(1, 'orange')
+
+# Print the updated list
+print(fruits)
+
+#5. Remove 'banana' from fruits = ['apple', 'banana', 'grapes']. 
+#Tip: Use remove(value). 
+
+# Create the list
+fruits = ['apple', 'banana', 'grapes']
+
+# Remove 'banana'
+fruits.remove('banana')
+
+# Print the updated list
+print(fruits)
+
+#6. Pop the last element from items = [10, 20, 30] and print the popped value. 
+#Tip: Call items.pop(). 
+# Create the list
+items = [10, 20, 30]
+
+# Pop the last element
+popped_value = items.pop()
+
+# Print the popped value
+print("Popped value:", popped_value)
+
+# Print the updated list
+print("Updated list:", items)
+
+#7. Check if 3 is in the list nums = [1, 2, 3, 4]. 
+#Tip: Use the in operator. 
+# Create the list
+nums = [1, 2, 3, 4]
+
+# Check if 3 is in the list
+if 3 in nums:
+    print("True")
+else:
+    print("False")
+
+#8. Print the slice [2, 3] from the list [0, 1, 2, 3, 4]. 
+#Tip: Use slicing: a[2:4]. 
+
+# Create the list
+a = [0, 1, 2, 3, 4]
+
+# Print the slice
+print(a[2:4])
+
+#9. Replace the element at index 1 in a = [5, 10, 15] with 12. 
+#Tip: Use assignment: a[1] = 12. 
+# Create the list
+a = [5, 10, 15]
+
+# Replace the element at index 1
+a[1] = 12
+
+# Print the updated list
+print(a)
+
+#10. Count how many times 2 appears in [1, 2, 2, 3, 2]. 
+#Tip: Use list.count(value).
+
+# Create the list
+numbers = [1, 2, 2, 3, 2]
+
+# Count the occurrences of 2
+count = numbers.count(2)
+
+# Print the result
+print("Number of times 2 appears:", count)
+
+
+#PythonTuples 
+#1. Create a tuple t = (10, 20, 30) and print the second element. 
+#Tip: Tuples use indexing: t[1]. 
+
+# Create the tuple
+t = (10, 20, 30)
+
+# Print the second element
+print("Second element:", t[1])
+
+#2. Find the length of tuple ('a', 'b', 'c'). 
+#Tip: Use len(). 
+
+# Create the tuple
+letters = ('a', 'b', 'c')
+
+# Find and print the length
+print("Length of the tuple:", len(letters))
+
+#3. Unpack the tuple (4, 5) into variables x and y. 
+#Tip: x, y = (4, 5). 
+
+# Create the tuple
+t = (4, 5)
+
+# Unpack the tuple
+x, y = t
+
+# Print the variables
+print("x =", x)
+print("y =", y)
+
+#4. Check if 'b' is in the tuple ('a', 'b', 'c'). 
+#Tip: Use 'b' in tuple. 
+
+# Create the tuple
+letters = ('a', 'b', 'c')
+
+# Check if 'b' is in the tuple
+if 'b' in letters:
+    print(True)
+else:
+    print(False)
+
+#5. Create an empty tuple and print its type. 
+#Tip: Empty tuple is ().
+
+# Create an empty tuple
+t = ()
+
+# Print the tuple
+print(t)
+
+# Print its type
+print(type(t))
+
+#6. Concatenate (1, 2) and (3, 4) into a new tuple. 
+#Tip: Use + operator. 
+
+# Create the tuples
+tuple1 = (1, 2)
+tuple2 = (3, 4)
+
+# Concatenate the tuples
+new_tuple = tuple1 + tuple2
+
+# Print the new tuple
+print(new_tuple)
+
+#7. Repeat (7,) three times. 
+#Tip: Use tuple * number.
+ 
+# Create the tuple
+t = (7,)
+
+# Repeat the tuple three times
+result = t * 3
+
+# Print the result
+print(result)
+
+#8. Find the index of 2 in (1, 2, 3, 2). 
+#Tip: Use index() method. 
+
+# Create the tuple
+t = (1, 2, 3, 2)
+
+# Find the index of 2
+index = t.index(2)
+
+# Print the index
+print("Index of 2:", index)
+
+#9. Count how many times 2 appears in (1, 2, 3, 2). 
+#Tip: Use count() method.
+
+# Create the tuple
+t = (1, 2, 3, 2)
+
+# Count the occurrences of 2
+count = t.count(2)
+
+# Print the result
+print("Number of times 2 appears:", count)
+
+#10. Create a single‑ element tuple containing the value 5. 
+#Tip: Remember to use a comma: (5,).
+
+# Create a single-element tuple
+t = (5,)
+
+# Print the tuple
+print(t)
+
+# Print its type
+print(type(t))
+
+#Python Sets 
+
+#1. Create a set from [1, 2, 2, 3] and print it. 
+#Tip: Use set(list). 
+
+# Create a list
+numbers = [1, 2, 2, 3]
+
+# Convert the list to a set
+my_set = set(numbers)
+
+# Print the set
+print(my_set)
+
+#2. Add element 4 to the set {1, 2, 3}. 
+#Tip: Use add().
+
+# Create the set
+numbers = {1, 2, 3}
+
+# Add element 4
+numbers.add(4)
+
+# Print the updated set
+print(numbers)
+
+#3. Remove element 2 from the set {1, 2, 3}. 
+#Tip: Use remove().
+
+# Create the set
+numbers = {1, 2, 3}
+
+# Remove element 2
+numbers.remove(2)
+
+# Print the updated set
+print(numbers)
+
+#4. Check if 5 is in the set {1, 3, 5}. 
+#Tip: Use in operator.
+
+# Create the set
+numbers = {1, 3, 5}
+
+# Check if 5 is in the set
+if 5 in numbers:
+    print(True)
+else:
+    print(False)
+
+#5. Find the length of set {10, 20, 30}. 
+#Tip: Use len(). 
+
+# Create the set
+numbers = {10, 20, 30}
+
+# Find and print the length
+print("Length of the set:", len(numbers))
+
+#6. Clear all elements from the set {1, 2, 3}. 
+#Tip: Use clear().
+
+# Create the set
+numbers = {1, 2, 3}
+
+# Clear all elements
+numbers.clear()
+
+# Print the updated set
+print(numbers)
+
+#7. Create a set {'a', 'b'} and add 'c' only if it’s missing. 
+#Tip: Check membership first: if 'c' not in s:. 
+# Create the set
+letters = {'a', 'b'}
+
+# Add c only if it is not already in the set
+if 'c' not in letters:
+    letters.add('c')
+
+# Print the updated set
+print(letters)
+
+#8. Convert list ['a', 'a', 'b'] into a set to remove duplicates. 
+#Tip: Casting removes duplicates automatically.
+
+# Create the list
+letters = ['a', 'a', 'b']
+
+# Convert the list to a set
+unique_letters = set(letters)
+
+# Print the set
+print(unique_letters)
+
+#9. Create two sets and print their union. 
+#Tip: Use set1 | set2. 
+# Create two sets
+set1 = {1, 2, 3}
+set2 = {3, 4, 5}
+
+# Find the union
+union_set = set1 | set2
+
+# Print the result
+print("Union:", union_set)
+
+#10. Create two sets and print their intersection. 
+#Tip: Use set1 & set2. 
+# Create two sets
+set1 = {1, 2, 3}
+set2 = {2, 3, 4}
+
+# Find the intersection
+intersection_set = set1 & set2
+
+# Print the result
+print("Intersection:", intersection_set)
+
+#Python Dictionaries
+
+#1. Create a dictionary {'name': 'Ali', 'age': 25} and print the name. 
+#Tip: Use d['name'].
+
+# Create the dictionary
+person = {'name': 'Ali', 'age': 25}
+
+# Print the value of the 'name' key
+print(person['name'])
+
+#2. Add key 'city': 'Lahore' to a dictionary. 
+#Tip: Use assignment: d['city'] = 'Lahore'. 
+
+# Create the dictionary
+person = {'name': 'Ali', 'age': 25}
+
+# Add a new key-value pair
+person['city'] = 'Lahore'
+
+# Print the updated dictionary
+print(person)
+
+#3. Change 'age' in {'name': 'Ali', 'age': 25} to 30. 
+#Tip: Assign a new value: d['age'] = 30. 
+
+# Create the dictionary
+person = {'name': 'Ali', 'age': 25}
+
+# Update the value of 'age'
+person['age'] = 30
+
+# Print the updated dictionary
+print(person)
+
+
+#4. Delete key 'age' from a dictionary. 
+#Tip: Use del d['age'].
+# Create the dictionary
+person = {'name': 'Ali', 'age': 25}
+
+# Delete the 'age' key
+del person['age']
+
+# Print the updated dictionary
+print(person)
+
+#5. Check if key 'salary' exists in a dictionary. 
+#Tip: Use in operator. 
+
+# Create the dictionary
+employee = {'name': 'Ali', 'age': 25}
+
+# Check if 'salary' exists
+if 'salary' in employee:
+    print(True)
+else:
+    print(False)
+
+#6. Print all keys from {'a': 1, 'b': 2}. 
+#Tip: Use d.keys().
+
+# Create the dictionary
+d = {'a': 1, 'b': 2}
+
+# Print all keys
+print(d.keys())
+
+#7. Print all values from a dictionary. 
+#Tip: Use d.values().
+
+# Create the dictionary
+d = {'a': 1, 'b': 2}
+
+# Print all values
+print(d.values())
+
+#8. Iterate and print key‑value pairs from {'x': 10, 'y': 20}. 
+#Tip: Use for k, v in d.items().
+
+# Create the dictionary
+d = {'x': 10, 'y': 20}
+
+# Iterate through key-value pairs
+for key, value in d.items():
+    print(key, ":", value)
+
+
+#9. Use get() to safely read key 'score' from an empty dictionary. 
+#Tip: Use d.get('score', default_value). 
+
+# Create an empty dictionary
+d = {}
+
+# Safely read the 'score' key
+score = d.get('score', 0)
+
+# Print the result
+print(score)
+
+#10. Create a dictionary from two lists: keys = ['a','b'], values = [1,2]. 
+#Tip: Use dict(zip(keys, values)).
+
+# Create two lists
+keys = ['a', 'b']
+values = [1, 2]
+
+# Create the dictionary
+d = dict(zip(keys, values))
+
+# Print the dictionary
+print(d)
+
+
+
