@@ -3,7 +3,6 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 
-
 # Sample data
 data = pd.DataFrame({'x': np.arange(100), 'y': np.random.rand(100).cumsum()})
 
@@ -44,7 +43,7 @@ plt.show()
 
 #RealEstate-USA - based examples
 # Load data from a CSV file
-df = pd.read_csv('FastFoodRestaurants.csv',delimiter=',')
+df = pd.read_csv('USStartupGrowth.csv',delimiter=',')
 
 print(df.dtypes)
 dffilter= df.head(40)
@@ -53,16 +52,16 @@ dffilter100= df.head(100)
 sns.set(style="whitegrid")
 
 #kind='hist'  
-g=sns.displot(data=dffilter, x="latitude" , y="name" , hue="longitude",  kind='hist'  )
-g.figure.suptitle("sns.displot(data=dffilter, x=latiude , y=name , hue=longitude,  kind='hist'  )")
+g=sns.displot(data=dffilter, x="Country" , y="Number of Investors" , hue="Growth Rate (%)",  kind='hist'  )
+g.figure.suptitle("sns.displot(data=dffilter, x=Country , y=Number of Investors , hue=Growth Rate (%),  kind='hist'  )")
 
 # Display the plot
 g.figure.show()
 read = input("Wait for me....")
 #g.figure.clear()
 
-g=sns.displot(data=dffilter, x="latitude" , y="name" , kind='kde'  )
-g.figure.suptitle("sns.displot(data=dffilter, x=latitude , y=name , kind='kde'  )"  )
+g=sns.displot(data=dffilter, x="Country" , y="Number of Investors" , kind='kde'  )
+g.figure.suptitle("sns.displot(data=dffilter, x=Country , y=Number of Investors , kind='kde'  )"  )
 
 # Display the plot
 g.figure.show()
@@ -70,52 +69,47 @@ read = input("Wait for me....")
 #g.figure.clear()
 
 #kind='kde'
-g=sns.kdeplot(data=dffilter, x="price")
-g.figure.suptitle("sns.kdeplot(data=dffilter, x=price)"  )
+g=sns.kdeplot(data=dffilter, x="Country")
+g.figure.suptitle("sns.kdeplot(data=dffilter, x=Country)"  )
 
 # Display the plot
 g.figure.show()
 read = input("Wait for me....")
 #g.figure.clear()
 
-g = sns.histplot(data=dffilter, x='latitude', y='name', hue='longitude', multiple="stack")
-g.figure.suptitle("sns.histplot(data=dffilter, x='latitude', y='name', hue='longitude', multiple=stack)"  )
-# Display the plot
-g.figure.show()
-read = input("Wait for me....")
-
-g = sns.scatterplot(x='latitude', y='name', data=dffilter)
-g.figure.suptitle("sns.scatterplot(x='latitude', y='name', data=dffilter)"  )
+g = sns.scatterplot(x='Country', y='Number', data=dffilter)
+g.figure.suptitle("sns.scatterplot(x='Country', y='Number of Investors', data=dffilter)"  )
 g.figure.show()
 read = input("Wait for me....")
 #g.figure.clear()
 
-g=sns.lineplot(data=dffilter, x="latitude" , y="name"  )
-g.figure.suptitle("sns.lineplot(data=dffilter, x=latitude , y=name  )"  )
-# Display the plot
-g.figure.show()
-read = input("Wait for me....")
-#g.figure.clear()
-
-g=sns.barplot(data=dffilter, x="latitude", y="name", legend=False)
-g.figure.suptitle("sns.barplot(data=dffilter, x=latitude, y=name, legend=False)"  )
+g=sns.lineplot(data=dffilter, x="Country" , y="Number of Investors"  )
+g.figure.suptitle("sns.lineplot(data=dffilter, x=Country , y=Number of Investors  )"  )
 # Display the plot
 g.figure.show()
 read = input("Wait for me....")
 #g.figure.clear()
 
 
-g=sns.catplot(data=dffilter, x="latitude", y="name")
-g.figure.suptitle("sns.catplot(data=df, x=latiude, y=name)"  )
+g=sns.barplot(data=dffilter, x="Country", y="Number of Investors", legend=False)
+g.figure.suptitle("sns.barplot(data=dffilter, x=Country, y=Number of Investors, legend=False)"  )
+# Display the plot
+g.figure.show()
+read = input("Wait for me....")
+#g.figure.clear()
+
+
+g=sns.catplot(data=dffilter, x="Country", y="Number of Investors")
+g.figure.suptitle("sns.catplot(data=df, x=Country, y=Number of Investors)"  )
 # Display the plot
 g.figure.show() 
 read = input("Wait for me....")
 #g.figure.clear()
 
-glue = dffilter.pivot(columns="latitude", values="name")
+glue = dffilter.pivot(columns="Country", values="Number of Investors")
 
 g=sns.heatmap(glue)
-g.figure.suptitle("sns.heatmap(glue)  - glue = dffilter.pivot(columns=latitude, values=name)"  )
+g.figure.suptitle("sns.heatmap(glue)  - glue = dffilter.pivot(columns=Country, values=Number of Investors)"  )
 # Display the plot
 g.figure.show()
 read = input("Wait for me....")
